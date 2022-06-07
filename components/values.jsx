@@ -3,9 +3,9 @@ import { Box, Button, HStack, Image, Stack, Text } from "@chakra-ui/react"
 const Values = () => {
     return(
         <Box>
-            <Stack direction={{base:'column',md:'row',lg:'row',xl:'row','2xl':'row'}} spacing='30px' pb='200px'>
+            <Stack direction={{base:'column',md:'column',lg:'row',xl:'row','2xl':'row'}} textAlign={{base:'center',md:'center',lg:'left',xl:'left','2xl':'left'}} spacing='30px' pb='200px'>
                 <Box>
-                    <Image src='/values.png' w='100%' h={'331px'} alt='about' />
+                    <Image src='/values.png' w='100%' h={{base:'256px',md:'331px',lg:'331px',xl:'331px','2xl':'331px'}} alt='about' />
                 </Box>
                 <Box>
                     <Text fontSize='52px' fontWeight='800' color='#2B2B2B'>Values</Text>

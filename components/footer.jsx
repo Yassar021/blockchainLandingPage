@@ -1,9 +1,9 @@
-import { Box, Container, Flex, HStack, Image, Stack, Text } from "@chakra-ui/react"
+import { Box, Container, Flex, HStack, Image, SimpleGrid, Stack, Text } from "@chakra-ui/react"
 
 const Footer = () => {
     return(
         <Box h='100%' w='100%' bgImage="/bg-footer.png" backgroundRepeat='no-repeat' backgroundSize='cover'>
-            <Flex direction='column' px='120px' py='40px' alignItems='center'>
+            <Flex direction='column' px={{base:'20px',md:'60px',lg:'120px',xl:'120px','2xl':'120px'}} py='40px' alignItems='center'>
                 <HStack spacing='24px'>
                     <Stack>
                         <svg width="76" height="76" viewBox="0 0 76 76" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -38,13 +38,14 @@ const Footer = () => {
                     </Stack>
                 </Stack>
 
-                <Stack direction='row' spacing='40px'>
+                <SimpleGrid textAlign={{base:'center',md:'center',lg:'left',xl:'left','2xl':'left'}} columns={{base:1,md:3, lg:5,xl:5,'2xl': 5}} spacing={{base:'10',md:'20px',lg:'40px',xl:'40px','2xl':'40px'}}>
                     <Text fontSize='18px' fontWeight='500' color='#fff'>Home</Text>
                     <Text fontSize='18px' fontWeight='500' color='#fff'>About Us</Text>
                     <Text fontSize='18px' fontWeight='500' color='#fff'>Our interests</Text>
-                    <Text fontSize='18px' fontWeight='500' color='#fff'>Values</Text>
-                    <Text fontSize='18px' fontWeight='500' color='#fff'>Current Projects</Text>
-                </Stack>
+                    <Text ml={{md:'60px',lg:'0px',xl:'0px','2xl':'0px'}} fontSize='18px' fontWeight='500' color='#fff'>Values</Text>
+                    <Text display={'none'} fontSize='18px' fontWeight='500' color='#fff'></Text>
+                    <Text ml={{md:'60px',lg:'0px',xl:'0px','2xl':'0px'}} fontSize='18px' fontWeight='500' color='#fff'>Current Projects</Text>
+                </SimpleGrid>
             </Flex>
         </Box>
     )

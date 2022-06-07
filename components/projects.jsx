@@ -1,13 +1,13 @@
-import { Box, Flex, Image, Link, Stack, Text } from "@chakra-ui/react"
+import { Box, Container, Flex, Image, Link, Stack, Text } from "@chakra-ui/react"
 
 const Projects = () => {
     return(
         <Box pb='200px'>
             <Flex direction='column' textAlign='center' pb='132px'>        
-                <Text fontSize={'52px'} fontWeight={'800'} color='#2B2B2B'>Current Projects</Text>
+                <Text fontSize={'52px'} fontWeight={'800'} color={{base:'#FF6600',md:'#2B2B2B',lg:'#2B2B2B',xl:'#2B2B2B','2xl':'#2B2B2B'}}>Current Projects</Text>
             </Flex>
 
-            <Stack direction={{base:'column',md:'row',lg:'row',xl:'row','2xl':'row'}} spacing='60px'>
+            <Stack direction={{base:'column',md:'row',lg:'row',xl:'row','2xl':'row'}} spacing={{base:'60px',md:'60px',lg:'60px',xl:'60px','2xl':'auto'}}>
                 <Box>
                     <Image src='/project1.png' w='100%' h='378px' alt='' />
                     <Text my='24px' fontSize='28px' fontWeight='600'>Certified Great<br /> Expectations Lover</Text>

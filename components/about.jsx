@@ -3,26 +3,26 @@ const { Box, Flex, Image, Text, Stack, HStack, Divider, Center, SimpleGrid, Link
 const About = () => {
     return(
         <Box>
-            <Stack direction={{base:'column',md:'column',lg:'row',xl:'row','2xl':'row'}} spacing='30px' mt='139px' pb={{base:'400px',md:'140px',lg:'140px',xl:'140px','2xl':'140px'}}>
+            <Stack direction={{base:'column-reverse',md:'column',lg:'row',xl:'row','2xl':'row'}} spacing='30px' mt='139px' pb={{base:'160px',md:'140px',lg:'140px',xl:'140px','2xl':'140px'}}>
                 <Box>
-                    <Image src='a-about.png' w='100%' h={'331px'} alt='about' />
+                    <Image mt={{base:'350px',md:'0px',lg:'0px',xl:'0px','2xl':'0px'}} src='a-about.png' w='100%' h={{base:'256px',md:'331px',lg:'331px',xl:'331px','2xl':'331px'}} alt='about' />
                 </Box>
-                <Box>
+                <Box textAlign={{base:'center',md:'center',lg:'left',xl:'left','2xl':'left'}}>
                     <Text fontSize='52px' fontWeight='800' color='#2B2B2B'>About Us</Text>
                     <Text my='35px' fontSize='20px' fontWeight='400' color='#5B5B5B'>We generated names based on a multitude of factors and picked the one that 
                             resonated with us the most. Our founder first engaged with the blockchain in 2013</Text>
-                    <Stack spacing='32px' direction={{base:'column',md:'row',lg:'row',xl:'row','2xl':'row'}} h='132px' w='639px'>
+                    <Stack spacing='32px' direction={{base:'column',md:'row',lg:'row',xl:'row','2xl':'row'}} h='132px' w={{base:'100%',md:'639px',lg:'639px',xl:'639px','2xl':'639px'}} ml={{base:'0px',md:'66px',lg:'0px',xl:'0px','2xl':'0px'}}>
                         <Box p='8px'>
                             <Text mb='8px' fontSize={'24px'} fontWeight={'600'} color='#5B5B5B'>Project Done</Text>
                             <Text fontSize={'40px'} fontWeight={'700'} color='#FF6600'>600+</Text>
                         </Box> 
-                        <Divider orientation='vertical' />
-                        <Box>
+                        <Divider orientation={{base:'horizontal',md:'vertical'}} />
+                        <Box p='8px'>
                             <Text mb='8px' fontSize={'24px'} fontWeight={'600'} color='#5B5B5B'>Happy Clients</Text>
                             <Text fontSize={'40px'} fontWeight={'700'} color='#FF6600'>1214+</Text>
                         </Box> 
-                        <Divider orientation='vertical' />
-                        <Box>
+                        <Divider orientation={{base:'horizontal',md:'vertical'}} />
+                        <Box p='8px'>
                             <Text mb='8px' fontSize={'24px'} fontWeight={'600'} color='#5B5B5B'>Employee</Text>
                             <Text  fontSize={'40px'} fontWeight={'700'} color='#FF6600'>60+</Text>
                         </Box> 

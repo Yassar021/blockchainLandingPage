@@ -13,7 +13,7 @@ const Index = () => {
         <title>Excursy</title>
       </Head>
 
-      <Box px={{md:'40px',lg:'60px',xl:'120px','2xl':'120px'}}>
+      <Box px={{base:'16px',md:'40px',lg:'60px',xl:'120px','2xl':'120px'}} >
         <Hero />
         <About />
         <Values />
